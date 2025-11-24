@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<noSqlDB>
+  <Key>1</Key>
+  <Element>
+    <Name>TestExce</Name>
+    <Descr>An excative package that manage the whole project and make calls to other neccessary pacakges as required</Descr>
+    <timeStamp>10/8/2015 7:42:55 PM</timeStamp>
+    <Children>
+      <Key>7</Key>
+      <Key>2</Key>
+      <Key>3</Key>
+      <Key>4</Key>
+      <Key>5</Key>
+      <Key>6</Key>
+    </Children>
+    <Payload>Execative Pacakge</Payload>
+  </Element>
+  <Key>2</Key>
+  <Element>
+    <Name>XML_IO</Name>
+    <Descr> An IO package invloved in input and output to and from disk</Descr>
+    <timeStamp>10/8/2015 7:42:55 PM</timeStamp>
+    <Children>
+      <Key>3</Key>
+      <Key>4</Key>
+      <Key>7</Key>
+    </Children>
+    <Payload> I thought this is the better design to leave all the XML operations and inuput and output operation to this package; reather than doing all these operation DBEngine</Payload>
+  </Element>
+  <Key>3</Key>
+  <Element>
+    <Name>DBElement</Name>
+    <Descr>DBElement the sturcture of each element for the noSQLdb</Descr>
+    <timeStamp>10/8/2015 7:42:55 PM</timeStamp>
+    <Children>
+      <Key>7</Key>
+    </Children>
+    <Payload> As you see here DBElement structure defines the datastructure of each element as seen here Metadata and payload. </Payload>
+  </Element>
+<Key>4</Key>
+  <Element>
+    <Name>DBEngine</Name>
+    <Descr>DBEngine is the core of noSQL db</Descr>
+    <timeStamp>10/8/2015 7:42:55 PM</timeStamp>
+    <Children>
+      <Key>3</Key>
+      <Key>7</Key>
+    </Children>
+    <Payload> It has Dictionary that enteres each DBElement in it as KEY/VALUE.Methods to manipulate data. </Payload>
+  </Element>
+<Key>5</Key>
+  <Element>
+    <Name>QueryEngine</Name>
+    <Descr>QueryEngine is the core of handeling and processing quries</Descr>
+    <timeStamp>10/8/2015 7:42:55 PM</timeStamp>
+    <Children>
+      <Key>4</Key>
+    </Children>
+    <Payload> It process all the quries using Delegate and Predicate </Payload>
+  </Element>
+<Key>6</Key>
+  <Element>
+    <Name>Display</Name>
+    <Descr> define methods to simplify display actions</Descr>
+    <timeStamp>10/8/2015 7:42:55 PM</timeStamp>
+    <Children>
+      <Key>3</Key>
+      <Key>4</Key>
+    </Children>
+    <Payload> This package implements formatting functions and tests them along with DBExtensions </Payload>
+  </Element>
+<Key>7</Key>
+  <Element>
+    <Name>DBExtenstion</Name>
+    <Descr>define extension methods for Display  </Descr>
+    <timeStamp>10/8/2015 7:42:55 PM</timeStamp>
+    <Children>
+      <Key>999</Key>
+      <Key>555</Key>
+    </Children>
+    <Payload> This package implements extensions methods to support displaying DBElements and DBEngine instances. </Payload>
+  </Element>
+</noSqlDB>

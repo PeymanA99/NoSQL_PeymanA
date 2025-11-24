@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<noSqlDB>
+  <Element>
+    <Name>William III</Name>
+    <Descr>A hot-shot</Descr>
+    <timeStamp>10/8/2015 7:42:55 PM</timeStamp>
+    <Children>
+      <Key>1</Key>
+      <Key>2</Key>
+      <Key>3</Key>
+      <Key>4</Key>
+    </Children>
+    <Payload>I am Boss; I own DOS, Your Future is my design!!!</Payload>
+  </Element>
+  <Element>
+    <Name>Jerry Seinfeld</Name>
+    <Descr>A Comedian</Descr>
+    <timeStamp>10/8/2015 7:42:55 PM</timeStamp>
+    <Children>
+      <Key>2</Key>
+      <Key>3</Key>
+      <Key>4</Key>
+      <Key>5</Key>
+      <Key>6</Key>
+    </Children>
+    <Payload>Have you noticed: What ever goes around the world it exactly fills the pages of newspaper for that day?</Payload>
+  </Element>
+  <Element>
+    <Name>William Wordsworth</Name>
+    <Descr>A Poet</Descr>
+    <timeStamp>10/8/2015 7:42:55 PM</timeStamp>
+    <Children>
+      <Key>999</Key>
+      <Key>555</Key>
+    </Children>
+    <Payload>With an eye made quiet by the power of harmony, and the deep power of joy, we see into the life of things.</Payload>
+  </Element>
+</noSqlDB>

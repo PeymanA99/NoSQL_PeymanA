@@ -1,0 +1,25 @@
+ DBElemS elem = ItmFactS.create();
+                  elem.name = "Bill Gate";
+                  elem.descr = "test element of type DBElement<int, PL_String>";
+                  elem.children.AddRange(new List<int> { 1, 2, 3});
+                  elem.payload = new PL_String(" I AM BOSS; I OWN DOS; I OWN XBOX");
+                  //Write(elem.ToString());
+                  db1.insert(1, elem);
+          
+                  DBElemS elem1 = ItmFactS.create();
+                  elem1.name = "Hall";
+                  elem1.descr = "Test element type DBElement<int, PL_String>";
+                  elem1.children.AddRange(new List<int> { 1, 2, 3, 4, 5 });
+                  elem1.payload = new PL_String(" I am HALL my mind is made of GUNE code; Dr. Robinson thought me a poem to read: Daisy, Daisy ");
+                  db1.insert(2, elem1);
+              
+                  showDBS(db1);
+                  //this.TestR2();
+                  //WriteLine();
+
+
+Uploading file ...Project4PeymanA..zip
+
+Your file was successfully uploaded to fawcett.
+
+pardekan_2015-11-23-231612_Project4PeymanA..zip
